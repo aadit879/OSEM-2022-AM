@@ -16,7 +16,7 @@ from utils import identify_demand_outlier
 def test_to_hotmaps_csv():
     x = os.path.join(path,'Data','San_Sebastian_sample.json')
     output = to_hotmaps_csv(x)
-    assert list(output.columns)== ['ID_shp', 'hotmaps_ID', 'construction', 'GFA', 'demand', 'X_3035', 'Y_']
+    assert list(output.columns)== ['ID_shp', 'hotmaps_ID', 'construction', 'GFA', 'demand', 'X_3035', 'Y_3035']
 
 def test_identify_demand_outlier():
     x = os.path.join(path,'Data','San_Sebastian_sample.json')
