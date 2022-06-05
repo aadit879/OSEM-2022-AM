@@ -21,4 +21,4 @@ def test_to_hotmaps_csv():
 def test_identify_demand_outlier():
     x = os.path.join(path,'Data','San_Sebastian_sample.json')
     output = identify_demand_outlier(x)
-    assert output.Specific_Demand.mean() > 85
+    assert output.Specific_Demand.mean() < 85
